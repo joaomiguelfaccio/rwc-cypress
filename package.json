@@ -9,7 +9,8 @@
     "cy:chrome": "npx cypress run --browser chrome --headless",
     "cy:firefox": "npx cypress run --browser firefox --headless",
     "cy:edge": "npx cypress run --browser edge --headless",
-    "cy:electron": "npx cypress run"
+    "cy:electron": "npx cypress run",
+    "report:clean": "rm -rf cypress/reports/* cypress/screenshots/* cypress/videos/*"
   },
   "keywords": [],
   "author": "",

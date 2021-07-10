@@ -40,9 +40,3 @@ Cypress.Commands.add('backGroundLogin', () => {
         });
     });
 })
-
-import Routes from './routes'
-
-beforeEach(() => {
-    Routes.init();
-});

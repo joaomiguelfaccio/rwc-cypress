@@ -1,4 +1,4 @@
-class Routes {
+class RoutesArticles {
 
     as = {
         postArticles: 'postArticles',
@@ -13,4 +13,5 @@ class Routes {
     }
 }
 
-export default new Routes()
+export default new RoutesArticles()
+

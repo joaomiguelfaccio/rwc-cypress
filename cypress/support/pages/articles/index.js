@@ -1,17 +1,18 @@
-import Routes from '../../routes';
+import Routes from '../../routes-articles';
 
 const faker = require('faker');
 const el = require('./elements').ELEMENTS
 
 let inputTitle = 'Agilizei Titulo';
-
 class Articles {
 
     acessarFormularioDePublicacao() {
+        // acessar o formulario para publicar artigo
         cy.get(el.linkNovaPublicacao).click();
     }
 
     preencherFormulario() {
+        // preencher o formulario
         cy.get(el.inputTitle).type(inputTitle);
         cy.get(el.inputDescription).type('Cypress');
         cy.get(el.textAreaContent).type(faker.lorem.paragraph());
@@ -19,6 +20,7 @@ class Articles {
     }
 
     submeterPublicacao() {
+        // sbumeter o formulario
         cy.get(el.buttonSubmit).click();
     }
 

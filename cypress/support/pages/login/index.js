@@ -1,6 +1,7 @@
 const el = require('./elements').ELEMENTS
-
+import Routes from '../../routes-login'
 class Login {
+
     acessarLogin() {
         // acessar a pagina de login
         cy.visit('login');
@@ -18,6 +19,16 @@ class Login {
     }
 
     confirmacaoLogado() {
+
+        cy.wait(`@${Routes.as.postUsers}`).then((postUsers) => {
+            expect(postUsers.response.statusCode).to.eq(200);
+        });
+        cy.wait(`@${Routes.as.getTags}`).then((getTags) => {
+            expect(getTags.response.statusCode).to.eq(200);
+        });
+        cy.wait(`@${Routes.as.getArticlesFeed}`).then((getArticlesFeed) => {
+            expect(getArticlesFeed.response.statusCode).to.eq(200);
+        });
         cy.get(el.ulAutenticado).should('be.visible')
     }
 
