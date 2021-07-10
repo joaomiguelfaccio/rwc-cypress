@@ -1,4 +1,4 @@
-import Routes from '../../routes-cadastro';
+import Routes from '../../routes';
 
 const faker = require('faker');
 

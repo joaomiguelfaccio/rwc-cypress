@@ -1,4 +1,4 @@
-import Routes from '../../routes-articles';
+import Routes from '../../routes';
 
 const faker = require('faker');
 const el = require('./elements').ELEMENTS

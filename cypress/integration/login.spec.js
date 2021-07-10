@@ -1,10 +1,10 @@
 import login from '../support/pages/login'
-import Routes from '../support/routes-login'
+import Routes from '../support/routes'
 
 context('Login', { browser: '!firefox' }, () => {
     beforeEach(() => {
         // Arrange (Preparação)
-        Routes.init();
+        Routes.initLogin();
     });
     it('Realizar login com sucesso', () => {
         // Arrange (Preparação)

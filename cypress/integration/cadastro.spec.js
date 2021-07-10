@@ -1,10 +1,10 @@
 import cadastro from '../support/pages/cadastro'
-import Routes from '../support/routes-cadastro'
+import Routes from '../support/routes'
 
 context('Cadastro', () => {
     beforeEach(() => {
         // Arrange (Preparação)
-        Routes.init();
+        Routes.initCadastro();
     });
 
     it('Cadastrar um novo usuário', () => {

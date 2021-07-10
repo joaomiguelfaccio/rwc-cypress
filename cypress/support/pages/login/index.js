@@ -1,5 +1,5 @@
 const el = require('./elements').ELEMENTS
-import Routes from '../../routes-login'
+import Routes from '../../routes'
 class Login {
 
     acessarLogin() {

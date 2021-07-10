@@ -1,13 +1,13 @@
 /// <reference types="cypress" />
 
 import articles from '../support/pages/articles'
-import Routes from '../support/routes-articles'
+import Routes from '../support/routes'
 
 context('Publicações', () => {
 
     beforeEach(() => {
         // Arrange (Preparação) - inicio
-        Routes.init();
+        Routes.initArticles();
         cy.backGroundLogin();
         articles.acessarFormularioDePublicacao();
         // Arrange (Preparação) - fim
